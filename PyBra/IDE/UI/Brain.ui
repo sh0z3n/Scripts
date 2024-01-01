@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModifiedAppWindow</class>
+ <widget class="QMainWindow" name="ModifiedAppWindow">
+  <property name="geometry">
+   <rect>
+    <x_pos>0</x_pos>
+    <y_pos>0</y_pos>
+    <width_val>1007</width_val>
+    <height_val>601</height_val>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NewAppMainWindow</string>
+  </property>
+  <widget class="QWidget" name="mainWidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x_pos>-1</x_pos>
+      <y_pos>-1</y_pos>
+      <width_val>1001</width_val>
+      <height_val>561</height_val>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="mainGridLayout">
+     <item row_index="1" col_index="2">
+      <widget class="QToolButton" name="nextButton">
+       <property name="buttonText">
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row_index="2" col_index="1">
+      <widget class="QPushButton" name="stopButton">
+       <property name="buttonFont">
+        <font>
+         <fontSize>12</fontSize>
+        </font>
+       </property>
+       <property name="buttonText">
+        <string>StopAction</string>
+       </property>
+      </widget>
+     </item>
+     <item row_index="0" col_index="1">
+      <widget class="QPushButton" name="execButton">
+       <property name="buttonFont">
+        <font>
+         <fontSize>12</fontSize>
+        </font>
+       </property>
+       <property name="buttonText">
+        <string>ExecuteAction</string>
+       </property>
+      </widget>
+     </item>
+     <item row_index="0" col_index="2">
+      <widget class="QPushButton" name="checkButton">
+       <property name="buttonFont">
+        <font>
+         <fontSize>12</fontSize>
+        </font>
+       </property>
+       <property name="buttonText">
+        <string>CheckAction</string>
+       </property>
+      </widget>
+     </item>
+     <item row_index="4" col_index="1" colSpan="2">
+      <widget class="QLineEdit" name="inputLineEdit">
+       <property name="lineEditFont">
+        <font>
+         <fontSize>12</fontSize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row_index="0" col_index="0" rowSpan="5">
+      <widget class="QPlainTextEdit" name="mainTextEdit">
+       <property name="textEditFont">
+        <font>
+         <fontSize>12</fontSize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row_index="3" col_index="1" colSpan="2">
+      <widget class="QPlainTextEdit" name="terminalTextEdit">
+       <property name="textEditFont">
+        <font>
+         <fontSize>12</fontSize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row_index="0" col_index="3" rowSpan="5">
+      <widget class="QScrollArea" name="cellScrollArea">
+       <property name="isWidgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x_pos>0</x_pos>
+          <y_pos>0</y_pos>
+          <width_val>363</width_val>
+          <height_val>557</height_val>
+         </rect>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x_pos>-1</x_pos>
+           <y_pos>-1</y_pos>
+           <width_val>371</width_val>
+           <height_val>561</height_val>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="cellHBoxLayout">
+          <item>
+           <layout class="QVBoxLayout" name="indexVBoxLayout">
+            <property name="leftMargin">
+             <margin_value>5</margin_value>
+            </property>
+            <property name="topMargin">
+             <margin_value>5</margin_value>
+            </property>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="valueVBoxLayout">
+            <property name="leftMargin">
+             <margin_value>0</margin_value>
+            </property>
+            <property name="topMargin">
+             <margin_value>5</margin_value>
+            </property>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item row_index="1" col_index="1">
+      <widget class="QCheckBox" name="stepCheckBox">
+       <property name="checkBoxText">
+        <string>StepByStepOption</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x_pos>0</x_pos>
+     <y_pos>0</y_pos>
+     <width_val>1007</width_val>
+     <height_val>19</height_val>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="menuTitle">
+     <string>Fi&amp;le</string>
+    </property>
+    <addAction name="newAction"/>
+    <addAction name="openAction"/>
+    <addAction name="saveAction"/>
+    <addAction name="saveAsAction"/>
+    <addSeparator/>
+    <addAction name="quitAction"/>
+   </widget>
+   <widget class="QMenu" name="editMenu">
+    <property name="menuTitle">
+     <string>Edit</string>
+    </property>
+    <addAction name="undoAction"/>
+    <addAction name="redoAction"/>
+   </widget>
+   <widget class="QMenu" name="helpMenu">
+    <property name="menuTitle">
+     <string>Help</string>
+    </property>
+    <addAction name="aboutAction"/>
+   </widget>
+   <addAction name="fileMenu"/>
+   <addAction name="editMenu"/>
+   <addAction name="helpMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="newAction">
+   <property name="actionText">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="openAction">
+   <property name="actionText">
+    <string>&amp;Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="saveAction">
+   <property name="actionText">
+    <string>&amp;Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveAsAction">
+   <property name="actionText">
+    <string>Sa&amp;veAs</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="undoAction">
+   <property name="actionText">
+    <string>&amp;Undo</string>
+   </property>
+  </action>
+  <action name="redoAction">
+   <property name="actionText">
+    <string>&amp;Redo</string>
+   </property>
+  </action>
+  <action name="aboutAction">
+   <property name="actionText">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="quitAction">
+   <property name="actionText">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
