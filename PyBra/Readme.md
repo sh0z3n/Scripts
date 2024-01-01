@@ -1,10 +1,10 @@
-
-
-<center><img src="./IDE/UI/to.png"></center>
+<p align="center">
+  <img src="./IDE/UI/to.png" alt="Your Image">
+</p>
 
 ## Description
 PyBra is a Fast
- Brainf#ck Language **Interpreter** , designed to encode/decode translate ad generate random brainfu*k codes , simulate Brainfuck tape dynamics , and more . 
+ Brainf#ck Language **Interpreter** , designed to simulate Brainfuck tape dynamics translate & generate random brainfu*k codes , Decode and Encode in BF, and more . 
 
 ## Installation
 To install PyBra Tool, you can either use :    
@@ -18,7 +18,7 @@ To install PyBra Tool, you can either use :
 -  Navigate to the PyBra directory: 
   `cd PyBra`
 -  Install required dependencies: 
-  `pip install Dependencies.py`
+  `pip install -r dependecies `
 
 
 
