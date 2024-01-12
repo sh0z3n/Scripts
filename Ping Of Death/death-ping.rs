@@ -5,8 +5,8 @@ use pnet::transport::{icmp_packet_iter, transport_channel, TransportChannelType:
 use std::net::IpAddr;
 use std::time::Duration;
 
-const SOURCE_IP: &str = "10.0.1.1";
-const TARGET_IP: &str = "10.0.1.5";
+const SOURCE_IP: &str = "40....";
+const TARGET_IP: &str = "10..."; // 3mr target ip 
 const MESSAGE: &[u8] = b"T";
 const NUMBER_PACKETS: usize = 5;
 
